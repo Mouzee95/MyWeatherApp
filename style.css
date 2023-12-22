@@ -6,16 +6,18 @@ body {
 }
 
 .container {
-    background-image: url(./img/img3.jpg);
-    background-size: cover;
-
     height: 100vh;
+    background-image: url(./img/sunlight-with-cloudy-blue-sky-beauytiful-scene.jpg);
+    background-size:cover;
+    background-size:100% 100%;
+  
+    
 }
 
 .heading {
     padding: 2%;
     height: 80px;
-    background-image: linear-gradient(to right, #6d6d72, #c6c6c7, #d6d6d7, #d8d8d9, #6d6d72);
+    /* background-image: linear-gradient(to right, #6d6d72, #c6c6c7, #d6d6d7, #d8d8d9, #6d6d72); */
     display: flex;
     flex-direction: column;
 
@@ -57,17 +59,29 @@ p {
     padding: 2px 4px;
     border-radius: 8px;
 }
-
 .form-cont button {
-    background-color: #c6c6c7;
+    background-color: lightblue;
     border-radius: 8px;
+    padding: 10px;
     cursor: pointer;
     border: none;
+
+}
+.btn{
+    display: flex;
+    gap: .5em;  
+}
+.form-cont button:hover{
+    background-color: whitesmoke;
+}
+.btn span{
+   display: flex;
+   align-items: center;
 }
 
 ::placeholder {
-    color: black;
-    font-style: italic;
+    color: rgb(0, 0, 0);
+    font-style:italic;
 
 }
 
@@ -107,4 +121,48 @@ footer {
     font-family: serif;
     height: 30px;
     padding: 2px;
+}
+@media  screen and (max-width: 800px) {
+    .container{
+        
+        background-size:100% 100%;
+    }
+    .heading img {
+        width: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+@media  screen and (max-width: 600px){
+    .heading{
+        height: 60px;
+    }
+    .form-cont { 
+        margin: 0;
+        display: block;
+    }
+    .form-cont button {
+        padding: 6px;
+        width: 20%Z;
+    }
+  
+
+    .days {
+
+        display: block;
+        width: 30%;
+    
+    }
+    .day img {
+        width: 10px;
+        height: 10px;
+    }
+}
+@media  (max-width:300px ) {
+    .form-cont input {
+        width: 30%;
+        padding: 0px 0px; 
+    }
+    
 }
