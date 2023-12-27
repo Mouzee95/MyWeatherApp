@@ -115,7 +115,6 @@ p {
     width: 60px;
     height: 60px;
 }
-
 footer {
     background-image: linear-gradient(to right, #6d6d72, #c6c6c7, #d6d6d7, #d8d8d9, #6d6d72);
     font-family: serif;
@@ -140,7 +139,8 @@ footer {
     }
     .form-cont { 
         margin: 0;
-        display: block;
+        /* display: block; */
+        flex-wrap: wrap;
     }
     .form-cont button {
         padding: 6px;
