@@ -1,27 +1,21 @@
 body {
     margin: 0;
     font-family: sans-serif;
-
+    background: url(./img/Lx0q.gif);
+    background-position: center;
+    background-size: cover;
 
 }
 
 .container {
     height: 100vh;
-    background-image: url(./img/sunlight-with-cloudy-blue-sky-beauytiful-scene.jpg);
-    background-size:cover;
-    background-size:100% 100%;
-  
-    
 }
 
 .heading {
     padding: 2%;
     height: 80px;
-    /* background-image: linear-gradient(to right, #6d6d72, #c6c6c7, #d6d6d7, #d8d8d9, #6d6d72); */
     display: flex;
     flex-direction: column;
-
-
 }
 
 .heading img {
@@ -88,7 +82,6 @@ p {
 .content-container {
     height: calc(100% - 200px);
     display: flex;
-    justify-content: center;
     gap: 1em;
     border-radius: 4px;
 }
@@ -116,7 +109,7 @@ p {
     height: 60px;
 }
 footer {
-    background-image: linear-gradient(to right, #6d6d72, #c6c6c7, #d6d6d7, #d8d8d9, #6d6d72);
+    /* background-image: linear-gradient(to right, #6d6d72, #c6c6c7, #d6d6d7, #d8d8d9, #6d6d72); */
     font-family: serif;
     height: 30px;
     padding: 2px;

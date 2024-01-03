@@ -10,7 +10,7 @@ const  createWeatherCard = (cityName, weatherItem, indx) => {
   if(indx===0){
       return `<div class="card center-center">
                   <h4>${cityName} ${weatherItem.dt_txt.split(" ")[0]}</h4>
-                    <img src="./img/sun2.png" alt="">
+                  <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" alt="weather-icon">
                     <P>
                         <center> <b><small>temp  ${(weatherItem.main.temp -273.15).toFixed(2)}&#8451;</small></b></center>
                     </P>
@@ -18,7 +18,7 @@ const  createWeatherCard = (cityName, weatherItem, indx) => {
 
   }else{
     return `<div class="day"><b><small>${weatherItem.dt_txt.split(" ")[0]}</small></b> <br>
-                <img src="${weatherItem.weather[0].icon}">
+                <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" alt="weather-icon">
                 <P>
                  <center> <b><small>temp ${(weatherItem.main.temp -273.15).toFixed(2)}&#8451;</small></b></center>
                 </P>
