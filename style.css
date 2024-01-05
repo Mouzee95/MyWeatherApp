@@ -101,6 +101,13 @@ p {
     width: 70%;
 
 }
+.day{
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 0.25rem;
+    width: 100px;
+}
+
 
 .day img {
     width: 60px;
