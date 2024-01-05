@@ -12,7 +12,7 @@ const  createWeatherCard = (cityName, weatherItem, indx) => {
                   <h4>${cityName} ${weatherItem.dt_txt.split(" ")[0]}</h4>
                   <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" alt="weather-icon">
                     <P>
-                        <center> <b><small>temp  ${(weatherItem.main.temp -273.15).toFixed(2)}&#8451;</small></b></center>
+                        <center> <b><small>  ${(weatherItem.main.temp -273.15).toFixed(2)}&#8451;</small></b></center>
                     </P>
                </div>`;
 
@@ -20,7 +20,7 @@ const  createWeatherCard = (cityName, weatherItem, indx) => {
     return `<div class="day"><b><small>${weatherItem.dt_txt.split(" ")[0]}</small></b> <br>
                 <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" alt="weather-icon">
                 <P>
-                 <center> <b><small>temp ${(weatherItem.main.temp -273.15).toFixed(2)}&#8451;</small></b></center>
+                 <center> <b><small> ${(weatherItem.main.temp -273.15).toFixed(2)}&#8451;</small></b></center>
                 </P>
             </div>`;
   }   
